@@ -150,7 +150,6 @@ main{
     .productoDestacado .contenido{
         display: flex;
         flex-direction: column;
-        padding: 8px;
         width: 100%;
         
     }
@@ -225,6 +224,27 @@ main{
     font-weight: 1000;
     
 }
+
+@media (max-width:700px){
+    .videoTour{
+        width: 100%;
+        height: fit-content;
+        margin-top: 300px;
+    }
+    .fechasTour h1{
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .fechasTour li{
+        font-size: 20px;
+    }
+    .fechasTour a{
+        font-size: 15px;
+        padding: 4px 8px;
+    }
+}
+
 .contacto{
     background-color: rgb(33, 32, 39);
     display: flex;
@@ -352,8 +372,8 @@ main{
 }
 .producto img{
     width: 180px;
-    height: 180x;
-    object-fit: cover;
+    height: 180px;
+    object-fit:cover;
     border-radius: 12px;
 }
 .comprar {
@@ -368,6 +388,20 @@ main{
     font-style: bold;
     font-weight: 800;
 }
+@media (max-width:700px){
+    .tituloTienda{
+        margin-top: 300px;
+        text-align: center;
+        width: 100%;
+        font-size: 20px;
+        padding: unset;
+        background-color: rgba(243, 238, 238, 0.20);
+    }
+    .tituloTienda h1{
+        padding: 8px;
+    }
+}
+
 
 .discografia{
     background-color: rgb(33, 32, 39);
@@ -385,20 +419,20 @@ main{
     border-radius: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: space space-around;
+    justify-content: space-around;
     flex-wrap: wrap;
     margin-bottom: 30px;
     background-color: rgba(243, 238, 238, 0.60);
     font-family: Amatic SC;
     padding: 30px;
     font-size: 30px;
+    text-align: center;
 }
 .disco .portadaDisco img{
     width: 200px;
     border-radius: 20px;
     padding: 10px;
 }
-
 .disco .escuchar a{
     background-color: rgb(33, 32, 39);
     color:rgb(118, 108, 139);
@@ -410,6 +444,22 @@ main{
     font-family: Amatic SC;
     font-style: bold;
     font-weight: 800;
+}
+
+@media (max-width:700px){
+.spotify{
+    margin-top: 350px;
+}
+.disco{
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 300px;
+    font-size: 25px;
+}
+.disco h3{
+    margin: 5%;
+    margin-bottom: 10px;
+}
 }
 
 footer{
