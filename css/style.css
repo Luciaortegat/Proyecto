@@ -198,15 +198,14 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.fechasTour li{
-    text-decoration: none;
-    list-style-type: none;
-    font-family: Amatic SC;
-    color:  rgba(243, 238, 238, 0.865);
-    font-style: bold;
-    font-size: 30px;
+    li{
+        text-decoration: none;
+        list-style-type: none;
+        font-family: Amatic SC;
+        color:  rgba(243, 238, 238, 0.865);
+        font-style: bold;
+        font-size: 30px;
+    }
 }
 
 .fechasTour a {

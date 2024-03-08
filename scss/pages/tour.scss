@@ -1,0 +1,52 @@
+main .gira{
+        background-color: rgb(33, 32, 39);
+        width: 100%;
+        background-color:rgb(33, 32, 39);
+        margin-top: 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .videoTour{
+            width: 100%;
+            height: 500px;
+            margin-top: 140px;
+        }
+        .fechasTour {
+            h1 {
+                font-size: 80px;
+                font-family: Amatic SC;
+                color:rgba(243, 238, 238, 0.865);
+                font-style: bold;
+            }
+            ol{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                li{
+                    text-decoration: none;
+                    list-style-type: none;
+                    font-family: Amatic SC;
+                    color:  rgba(243, 238, 238, 0.865);
+                    font-style: bold;
+                    font-size: 30px;
+                }
+                a {
+                    text-decoration: none;
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+                    background-color: rgb(238, 241, 247, 0.5);
+                    color:rgb(3, 2, 5);
+                    border-radius: 8px;
+                    padding: 8px 16px;
+                    font-size: 20px;
+                    width: fit-content;
+                    font-family: Amatic SC;
+                    font-style: bold;
+                    font-weight: 1000;
+                }
+            }    
+        }
+    }
+
+
+
