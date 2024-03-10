@@ -1,12 +1,11 @@
-body {
-    margin: 0%
-}
 
-$color-header: rgb(244, 243, 243, 0.75);
-$color-primario: rgb(33, 32, 39);
-$color-secundario: rgba(243, 238, 238, 0.70);
 
-@import './media-queries';
+
+@import './general/reset';
+
+@import './general/variables';
+
+@import './general/media-queries';
 
 @import './layout/header';
 
