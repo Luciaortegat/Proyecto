@@ -1,0 +1,111 @@
+.contacto{
+    background-color: $color-primario;
+    display: flex;
+    align-items:center;
+    flex-direction: row;
+    justify-content:space-around;
+    background-image: url(../recursos/contacto\ foto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include media-querie-mobile{
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+        background-image: url(../recursos/contacto\ foto.jpg);
+        background-size:cover;
+        background-position-x: center;
+        margin-bottom: unset;
+    }
+    }
+    .contactoNovedades {
+        background-color: $color-secundario;
+        width: fit-content;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 14px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 150px; 
+        margin-bottom: 30px; 
+        -webkit-box-shadow: 8px 10px 21px 0px rgba(0,0,0,1);
+        -moz-box-shadow: 8px 10px 21px 0px rgba(0,0,0,1);
+        box-shadow: 8px 10px 21px 0px rgba(0,0,0,1);
+        @include media-querie-mobile{
+            margin-top: 400px;
+            margin-left: 10px;
+            margin-right: 10px;
+            font-size: 12px;
+        }
+        
+        form{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 6px;
+            }
+    }
+
+    .contactoOpinion {
+        background-color: $color-secundario;
+        width: fit-content;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 30px; 
+        margin-top: 150px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        -webkit-box-shadow: 8px 10px 21px 0px rgba(0,0,0,1);
+        -moz-box-shadow: 8px 10px 21px 0px rgba(0,0,0,1);
+        box-shadow: 8px 10px 21px 0px rgba(0,0,0,1);
+        @include media-querie-mobile{
+            margin-top: 50px;
+            margin-left: 10px;
+            margin-right: 10px;
+            font-size: 12px;
+            padding: unset;
+        }
+        form{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        
+    }
+
+
+.contactoOpinion input{
+    font-size: 15px;
+    margin: 10px 5px;
+    }
+
+
+.contactoNovedades input{
+    font-size: 15px;
+    margin: 10px;
+}
+
+.contacto .enviar {
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: $color-secundario;
+    color:$color-primario;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 20px;
+    width: fit-content;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.contacto .enviar:hover{
+    background-color: $color-primario;
+    color:$color-secundario;
+}

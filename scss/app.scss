@@ -1,141 +1,28 @@
-
-@import './pages/discografia.scss';
-
-body{
-    margin: 0%;
-    }
-
-header{
-    background-color: rgb(33, 32, 39, 60%);  
-    width: 100%;
-    min-height: 130px ;
-    display: flex !important;
-    justify-content: space-between;
-    align-content: center;
-    flex-wrap: wrap;
-    position: fixed;
-    .logo{
-        font-family: Shadows Into Light;
-        font-weight: 600;
-        color: white;
-        text-decoration: none;
-        font-size: 60px;
-        margin-left: 18px;
-        padding: 15px;
-    }
-    nav{
-        display: flex;
-        align-items: center;
-        margin-right: 15px;
-    }
-    ol{
-        list-style-type: none;
-        display: flex;
-        align-content: center;
-    }
-    .list-item a{
-        color: white;
-        text-decoration: none;
-        font-family: Amatic SC;
-        font-style: bold;
-        font-size: 30px;
-        padding: 10px;
-
-    }
+body {
+    margin: 0%
 }
 
-main{
-    min-height: 100vh;
-    .portada img{
-        width: 100%;
-        height: 130px;
-        object-fit: cover;
-    }
-    .productoDestacado{
-        width: 100%;
-        height: 400px;
-        display: flex;
-        &:nth-of-type(even) img{
-            order: 2;
-         }
-         &:nth-of-type(even) .contenido{
-            background-color:rgb(176, 158, 186);
-            color: rgba(104, 5, 139, 0.865);;
-            display: flex;
-            flex-direction: column;
-        }
-        img{
-            width: 60%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .contenido{
-            background-color:rgb(33, 32, 39);
-            color: white;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            align-items: center;
-            h3{
-                font-family: Amatic SC;
-                font-style: bold;
-                font-size: 50px;
-                margin-left: 100px; 
-                margin-bottom: 20px;
-            }
-            p{
-                font-family: Arial, Helvetica, sans-serif;
-                font-style: italic;
-                width: 60%;
-                margin-left: 100px;
-                margin-bottom: 50px;
-            }
-            a{
-                background-color: rgb(238, 241, 247, 0.5);
-                color:rgb(3, 2, 5);
-                border-radius: 8px;
-                padding: 8px 16px;
-                font-size: 20px;
-                width: fit-content;
-                text-decoration: none;
-                font-family: Amatic SC;
-                font-style: bold;
-                margin-left: 100px;
-                font-weight: 800;
-            }
+$color-header: rgb(244, 243, 243, 0.75);
+$color-primario: rgb(33, 32, 39);
+$color-secundario: rgba(243, 238, 238, 0.70);
 
-        }
-    }
-}
-.gira{
-    background-color: rgb(33, 32, 39);
-    width: 100%;
-    background-color:rgb(33, 32, 39);
-    margin-top: 0%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+@import './media-queries';
 
-.videoTour{
-    width: 100%;
-    height: 500px;
-    margin-top: 140px;
-}
+@import './layout/header';
 
-footer{
-    width: 100%;
-    height: 40px;
-    align-content: center;
-    bottom: 0%;
-    margin-top: 0%;
-    ol{
-        list-style-type: none;
-        display: flex;
-        justify-content: center;
-        img{
-            padding: 5px 15px;
-        }
-    }
+@import './layout/footer';
 
-}
+@import './pages/discografia';
+
+@import './pages/contacto';
+
+@import './pages/index';
+
+@import './pages/tienda';
+
+@import './pages/tour';
+
+
+
+
+
