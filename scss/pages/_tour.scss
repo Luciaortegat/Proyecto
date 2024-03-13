@@ -25,7 +25,7 @@
             @include media-querie-mobile{
                 margin-top: 10px;
                 text-align: center;
-                font-size: 40px;
+                font-size: 50px;
                 margin-bottom: 20px;
             }
         }
@@ -33,36 +33,40 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+
             li{
                 text-decoration: none;
                 list-style-type: none;
                 font-family: Amatic SC;
                 color:  $color-secundario;
                 font-style: bold;
-                font-size: 30px;
+                font-size: 40px;
                 @include media-querie-mobile{
-                    font-size: 20px;
+                    font-size: 30px;
                 }
             }
-        }
-        a {
-            text-decoration: none;
-            margin-top: 10px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            padding: 8px 16px;
-            font-size: 20px;
-            width: fit-content;
-            font-family: Amatic SC;
-            font-style: bold;
-            font-weight: 1000;
-            @include media-querie-mobile{
-                font-size: 15px;
-                padding: 2px 6px;
+            a {
+                background-color: $color-secundario;
+                color:$color-primario;
+                border-radius: 8px;
+                padding: 8px 16px;
+                font-size: 20px;
+                width: fit-content;
+                text-decoration: none;
+                font-family: Amatic SC;
+                font-style: bold;
+                font-weight: 800;
+                @include media-querie-mobile{
+                    font-size: 20px;
+                    padding: 2px 6px;
+                    margin-bottom: 10px;
+                }                                        
             }
-            
+            a:hover{
+                    background-color: $color-primario;
+                    color:$color-secundario;
+                    border: 1px solid $color-secundario
+            }         
         }
-
-    }
+    }   
 }
-

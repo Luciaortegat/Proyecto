@@ -34,7 +34,7 @@
             margin-left: 10px;
             margin-right: 10px;
             height: 300px;
-            h3 {margin: 5%;
+            h2 {margin: 5%;
             margin-bottom: 10px;
             }
         }
@@ -56,9 +56,11 @@
             font-weight: 800;
         }
         .escuchar a:hover{
-            background-color: $color-secundario;
-            color:$color-primario;
+                background-color: $color-secundario;
+                color:$color-primario;
+            }
         }
+      
     }
-}
+
 
