@@ -11,9 +11,9 @@
         margin-bottom: 0%;
         text-align: left;
         padding: 0px 30px;
-        width: 100%;
+        width: 80%;
         @include media-querie-mobile{
-            margin-top: 300px;
+            margin-top: 350px;
             text-align: center;
             width: 100%;
             font-size: 20px;
@@ -65,9 +65,12 @@
             }
 
         }
+        .producto:hover{
+            transform: translateY(-15px);
+            transition: all 0.5s ease;
+            }
     }
 
 }
-
 
 

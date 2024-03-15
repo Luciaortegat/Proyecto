@@ -5,19 +5,20 @@ body {
 header {
   background-color: rgba(33, 32, 39, 0.6);
   width: 100%;
-  min-height: 130px;
+  height: 130px;
   display: flex !important;
   justify-content: space-between;
   align-content: center;
   flex-wrap: wrap;
-  position: fixed;
+  position: absolute;
 }
 @media (max-width: 576px) {
   header {
+    position: absolute;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    position: absolute;
+    height: unset;
   }
 }
 header .logo {
@@ -66,6 +67,10 @@ header nav ol .list-item a {
   font-size: 30px;
   padding: 10px;
 }
+header nav ol .list-item:hover {
+  transform: scale(1.1, 1.1);
+  transition: all 0.4s ease;
+}
 
 footer {
   width: 100%;
@@ -100,7 +105,7 @@ ol img {
 }
 @media (max-width: 576px) {
   .discografia .spotify {
-    margin-top: 320px;
+    margin-top: 370px;
   }
 }
 .discografia .disco {
@@ -121,14 +126,13 @@ ol img {
 }
 @media (max-width: 576px) {
   .discografia .disco {
-    padding: 15px;
+    padding: 10px;
     font-size: 25px;
-    margin-left: 10px;
-    margin-right: 10px;
     height: 300px;
+    width: 220px;
   }
   .discografia .disco h2 {
-    margin: 5%;
+    margin-top: 5px;
     margin-bottom: 10px;
   }
 }
@@ -136,6 +140,13 @@ ol img {
   width: 200px;
   border-radius: 20px;
   padding: 10px;
+}
+@media (max-width: 576px) {
+  .discografia .disco .portadaDisco img {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 160px;
+  }
 }
 .discografia .disco .escuchar a {
   background-color: rgb(33, 32, 39);
@@ -152,6 +163,10 @@ ol img {
 .discografia .disco .escuchar a:hover {
   background-color: rgba(243, 238, 238, 0.7);
   color: rgb(33, 32, 39);
+}
+.discografia .disco:hover {
+  transform: translateY(-15px);
+  transition: all 0.5s ease;
 }
 
 .contacto {
@@ -307,19 +322,18 @@ main .portada img {
   flex-direction: column;
   text-align: center;
   align-items: center;
+  justify-content: center;
 }
 .productoDestacado .contenido h2 {
   font-family: Amatic SC;
   font-style: bold;
   font-size: 50px;
-  margin-left: 100px;
   margin-bottom: 20px;
 }
 .productoDestacado .contenido p {
   font-family: Arial, Helvetica, sans-serif;
   font-style: italic;
   width: 60%;
-  margin-left: 100px;
   margin-bottom: 50px;
 }
 .productoDestacado .contenido a {
@@ -332,7 +346,6 @@ main .portada img {
   text-decoration: none;
   font-family: Amatic SC;
   font-style: bold;
-  margin-left: 100px;
   font-weight: 800;
 }
 .productoDestacado .contenido a:hover {
@@ -369,10 +382,12 @@ main .portada img {
   }
   .productoDestacado .contenido p {
     margin-left: 5px;
+    width: 82%;
+    margin-bottom: 30px;
   }
   .productoDestacado .contenido a {
     margin-left: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
   }
   .productoDestacado main {
     display: flex;
@@ -397,11 +412,11 @@ main .portada img {
   margin-bottom: 0%;
   text-align: left;
   padding: 0px 30px;
-  width: 100%;
+  width: 80%;
 }
 @media (max-width: 576px) {
   .tienda .tituloTienda {
-    margin-top: 300px;
+    margin-top: 350px;
     text-align: center;
     width: 100%;
     font-size: 20px;
@@ -453,26 +468,37 @@ main .portada img {
   background-color: rgba(243, 238, 238, 0.7);
   color: rgb(33, 32, 39);
 }
+.tienda .productosOficiales .producto:hover {
+  transform: translateY(-15px);
+  transition: all 0.5s ease;
+}
 
 .gira {
-  background-color: rgb(33, 32, 39);
+  background: rgb(33, 32, 39);
+  background: linear-gradient(180deg, rgb(33, 32, 39) 0%, rgb(42, 41, 48) 62%, rgb(67, 66, 72) 82%, rgb(90, 89, 95) 92%, rgb(152, 151, 155) 97%, rgb(255, 255, 255) 100%);
   width: 100%;
   background-color: rgb(33, 32, 39);
   margin-top: 0%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 1300px;
+}
+@media (max-width: 576px) {
+  .gira {
+    height: unset;
+  }
 }
 .gira .videoTour {
   width: 100%;
   height: 500px;
-  margin-top: 140px;
+  margin-top: 200px;
 }
 @media (max-width: 576px) {
   .gira .videoTour {
     width: 100%;
     height: fit-content;
-    margin-top: 250px;
+    margin-top: 300px;
   }
 }
 .gira .fechasTour h2 {
@@ -530,6 +556,71 @@ main .portada img {
   background-color: rgb(33, 32, 39);
   color: rgba(243, 238, 238, 0.7);
   border: 1px solid rgba(243, 238, 238, 0.7);
+}
+
+.galeria {
+  background: rgb(33, 32, 39);
+  background: linear-gradient(180deg, rgb(33, 32, 39) 0%, rgb(33, 26, 39) 0%, rgb(33, 23, 39) 34%, rgb(71, 58, 79) 64%, rgb(255, 255, 255) 100%);
+  display: flex;
+  flex-direction: column;
+  padding: 200px 50px 100px;
+}
+@media (max-width: 576px) {
+  .galeria {
+    padding: 200px 10px 10px;
+  }
+}
+.galeria .tituloFotosTour {
+  font-size: 60px;
+  font-family: Amatic SC;
+  color: rgba(243, 238, 238, 0.7);
+  text-align: left;
+}
+@media (max-width: 576px) {
+  .galeria .tituloFotosTour {
+    margin-top: 150px;
+    font-size: 30px;
+  }
+}
+.galeria #fotosTour {
+  width: 100%;
+}
+.galeria #fotosTour .carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+@media (max-width: 576px) {
+  .galeria #fotosTour .carousel-item img {
+    height: 200px;
+  }
+}
+.galeria .tituloFotosMidn {
+  font-size: 60px;
+  font-family: Amatic SC;
+  color: rgba(243, 238, 238, 0.7);
+  margin-bottom: 10px;
+  text-align: left;
+  margin-top: 50px;
+}
+@media (max-width: 576px) {
+  .galeria .tituloFotosMidn {
+    margin-top: 30px;
+    margin-bottom: 8px;
+    font-size: 30px;
+  }
+}
+.galeria #fotosMidn {
+  width: 100%;
+}
+.galeria #fotosMidn .carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+@media (max-width: 576px) {
+  .galeria #fotosMidn .carousel-item img {
+    height: 200px;
+    margin-bottom: 30px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
